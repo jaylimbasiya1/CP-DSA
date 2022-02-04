@@ -83,6 +83,8 @@ struct segemttree{
 			
 			update(st,mid,i,j,val,2*index);
 			update(mid+1,en,i,j,val,2*index);
+			
+			tree[index]=tree[index*2]+tree[index*2+1];
 		}	
 	
 }tree;
@@ -111,6 +113,7 @@ int main(){
 		}
 		
 	}
+	
 	
 	
 }
